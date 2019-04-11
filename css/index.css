@@ -1,0 +1,110 @@
+
+/*********************************************************************************/
+/* 头部品牌 start*/
+.brand {
+    background-color: #f7f7f7;
+}
+.brand .w {
+    font-size: 12px;
+    line-height: 30px;
+}
+.brand a ,.line {
+    color: #999;
+}
+.brand .line {
+    margin: 0 14px;
+}
+.brand .blue {
+    color: #3492fd;
+}
+header {
+    margin-bottom: 18px;
+ }
+/* 头部品牌 start*/
+
+/* 侧边导航栏目 start*/
+.nav {
+    width: 100px;
+    height: 100%;
+/*    background-color: pink;*/
+    position: relative;
+}
+.nav .logo img {
+    width: 80px;
+}
+.nav li a {
+  display: block; 
+  width: 100px;
+  line-height: 46px;
+  text-align: center; 
+  margin: 4px 0;
+}
+.slidebar li a:hover,
+.current {
+    border-radius: 6px;
+    background: #3492fd;
+    color: #fff;
+}
+
+/* 侧边导航栏目 end*/
+
+/* 新闻数据 satrt*/
+.container {
+    max-width: 640px;
+    min-width: 320px;
+/*    background-color: yellow;*/
+    position: absolute;
+    top: 0px;
+    left: 140px;    
+}
+.container dd {
+    padding: 12px 0;  
+    border-bottom: 1px solid #ccc; 
+}
+.container dd li {
+    padding: 10px 6px;
+    width:460px; 
+    word-break:break-all;
+}
+.container dd li:first-child {
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.container .more {
+    width: 200px;
+    margin: 0 auto;
+    line-height: 40px;
+    text-align: center;
+    background-color: #3492fd;
+    font-size: 18px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+/* 新闻数据 end*/
+
+/* 右边博学谷新闻 start */
+.news {
+    width: 30%;
+    background-color: #eee;
+    border-bottom: 2px solid #3492fd;
+    border-top: 2px solid #3492fd;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.newstable {
+    padding: 0 18px 18px 18px;
+}
+.newstable dt {
+    line-height: 46px;
+} 
+.newstable dd {
+    padding: 10px 0;  
+    border-bottom: 1px solid #ccc; 
+} 
+.newstable dd li {
+    padding: 12px;
+}
+/* 右边博学谷新闻 end */
+/*********************************************************************************/

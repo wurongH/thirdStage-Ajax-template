@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>博学谷新闻</title>
+	<!-- 公共样式 -->
+    <link rel="stylesheet" href="./css/base.css">
+	<!-- 首页样式 -->
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="shortcut icon" href="favicon.ico"  type="image/x-icon"/> 
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/art-Template.js"></script> 
+	<script src="./js/index.js"></script>
+</head>
+<body>
+<!-- header start-->
+<header class="brand clearfix">  
+	<div class="w">
+		<div class=" fl">
+		<a href="#">传智播客旗下高端IT在线教育平台</a>
+		<span class="line">|</span> <span class="blue">咨询热线：010-56288220</span>
+		</div>
+		<div class="fr"> <img src="./imgs/headerword.png"></div>
+	</div>
+</header>
+
+<div class="w">
+	<!-- 侧边导航栏目 -->
+	<div class="nav" >
+		<div class="logo">
+			<a href="javascript:void(0)"><img src="./imgs/logo.png"></a>
+		</div>
+		<ul class="slidebar">
+			<li class="current" data-id="headlineNews"><a href="javascript:void(0)">头条</a></li>
+			<li data-id="finance"><a href="javascript:void(0)">财经</a></li>
+			<li data-id="sport"><a href="javascript:void(0)">体育</a></li>
+			<li data-id="recreation"><a href="javascript:void(0)">娱乐</a></li>
+			<li data-id="military"><a href="javascript:void(0)">军事</a></li>
+			<li data-id="education"><a href="javascript:void(0)">教育</a></li>
+			<li data-id="science"><a href="javascript:void(0)">科技</a></li>
+			<li data-id="nba"><a href="javascript:void(0)">NBA</a></li>
+		</ul>
+	</div>
+	<!-- 新闻数据 -->
+	<div class="container">
+		<dl class="main">
+<!-- 			<dd class="clearfix">
+				<div class="fl">
+					<a href="javascript:void(0)"><img src="./imgs/FE.png" height="100" width="160"></a>
+				</div>
+				<ul class="fl">
+					<li lass="fl">
+						<a href="javascript:void(0)">昔日高考状元第三次因盗窃成习惯</a>
+					</li>
+					<li><span>上游新闻</span> &nbsp<span>2018-06-21 10:12:00</span></li>
+				</ul>
+			</dd>	 -->
+			<!-- art-Template模板渲染 -->
+			<script type="text/html" id="test">	
+			{{if list}}	
+					{{each list as item}}
+						<dd class="clearfix">
+							<div class="fl">
+								<a href="javascript:void(0)"><img src= {{item.pic}} height="100" width="140"></a>
+							</div>
+							<ul class="fl">
+								<li>
+									<a href="javascript:void(0)">{{item.title}}</a>
+								</li>
+								<li><span>{{item.src}}</span> &nbsp<span>{{item.time}}</span></li>
+							</ul>
+						</dd>
+					{{/each}}
+			{{/if}}
+			</script>
+		</dl> 
+		<div class="more">
+			<a href="Javascript:void(0)" id="getMoreData">加载更多...</a>
+		</div>
+	</div>
+	<!-- 右边博学谷新闻 -->
+	<div class="news">
+		<dl class="newstable">
+			<dt><h2>博学谷新闻</h2></dt>
+			<dd class="clearfix">
+				<div class="fl">
+					<img src="./imgs/FE.png" height="80" width="140">
+				</div>
+				<ul class="fl">
+					<li><a href="javascript:void(0)">博学谷前端在线就业班</a></li>
+					<li><a href="javascript:void(0)">博学谷前端在线就业...</a></li>
+				</ul>
+			</dd>
+			<dd class="clearfix">
+				<div class="fl">
+					<img src="./imgs/fe-list.png" height="80" width="140">
+				</div>
+				<ul class="fl">
+					<li><a href="javascript:void(0)">博学谷前端在线就业班</a></li>
+					<li><a href="javascript:void(0)">博学谷前端在线就业...</a></li>
+				</ul>
+			</dd>
+			<dd class="clearfix">
+				<div class="fl">
+					<img src="./imgs/js.jpg" height="80" width="140">
+				</div>
+				<ul class="fl">
+					<li><a href="javascript:void(0)">博学谷前端在线就业班</a></li>
+					<li><a href="javascript:void(0)">博学谷前端在线就业...</a></li>
+				</ul>
+			</dd>
+			<dd class="clearfix">
+				<div class="fl">
+					<img src="./imgs/wx.jpg" height="80" width="140">
+				</div>
+				<ul class="fl">
+					<li><a href="javascript:void(0)">博学谷前端在线就业班</a></li>
+					<li><a href="javascript:void(0)">博学谷前端在线就业...</a></li>
+				</ul>
+			</dd>
+			<dd class="clearfix">
+				<div class="fl">
+					<img src="./imgs/FE.png" height="80" width="140">
+				</div>
+				<ul class="fl">
+					<li><a href="javascript:void(0)">博学谷前端在线就业班</a></li>
+					<li><a href="javascript:void(0)">博学谷前端在线就业...</a></li>
+				</ul>
+			</dd>
+			<dd class="clearfix">
+				<div class="fl">
+					<img src="./imgs/fe-list.png" height="80" width="140">
+				</div>
+				<ul class="fl">
+					<li><a href="javascript:void(0)">博学谷前端在线就业班</a></li>
+					<li><a href="javascript:void(0)">博学谷前端在线就业...</a></li>
+				</ul>
+			</dd>
+			<dd class="clearfix">
+				<div class="fl">
+					<img src="./imgs/js.jpg" height="80" width="140">
+				</div>
+				<ul class="fl">
+					<li><a href="javascript:void(0)">博学谷前端在线就业班</a></li>
+					<li><a href="javascript:void(0)">博学谷前端在线就业...</a></li>
+				</ul>
+			</dd>
+			<dd class="clearfix">
+				<div class="fl">
+					<img src="./imgs/js.jpg" height="80" width="140">
+				</div>
+				<ul class="fl">
+					<li><a href="javascript:void(0)">博学谷前端在线就业班</a></li>
+					<li><a href="javascript:void(0)">博学谷前端在线就业...</a></li>
+				</ul>
+			</dd>
+			<dd class="clearfix">
+				<div class="fl">
+					<img src="./imgs/js.jpg" height="80" width="140">
+				</div>
+				<ul class="fl">
+					<li><a href="javascript:void(0)">博学谷前端在线就业班</a></li>
+					<li><a href="javascript:void(0)">博学谷前端在线就业...</a></li>
+				</ul>
+			</dd>
+			<dd class="clearfix">
+				<div class="fl">
+					<img src="./imgs/js.jpg" height="80" width="140">
+				</div>
+				<ul class="fl">
+					<li><a href="javascript:void(0)">博学谷前端在线就业班</a></li>
+					<li><a href="javascript:void(0)">博学谷前端在线就业...</a></li>
+				</ul>
+			</dd>
+			<dd class="clearfix">
+				<div class="fl">
+					<img src="./imgs/js.jpg" height="80" width="140">
+				</div>
+				<ul class="fl">
+					<li><a href="javascript:void(0)">博学谷前端在线就业班</a></li>
+					<li><a href="javascript:void(0)">博学谷前端在线就业...</a></li>
+				</ul>
+			</dd>
+			<dd class="clearfix">
+				<div class="fl">
+					<img src="./imgs/fe-list.png" height="80" width="140">
+				</div>
+				<ul class="fl">
+					<li><a href="javascript:void(0)">博学谷前端在线就业班</a></li>
+					<li><a href="javascript:void(0)">博学谷前端在线就业...</a></li>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+</div>
+</body>
+</html>
